@@ -1,0 +1,337 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+    
+html{
+    font-size:10px;
+}
+    
+:root{
+    --color-primary:#212529;
+    --color-secondary:#0d6efd;
+    --color-link:#9b9d9e;
+    --font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-size-body:1.7rem;
+    --font-nav-size:1.5rem;
+    --some-backgrounds:#f8f9fa;
+}
+    
+body{
+    font-family:var(--font-family);
+    font-size: var(--font-size-body);
+}
+    
+.dot a{
+        text-decoration: none;
+}
+
+.second-side a{
+    text-decoration: none;
+}
+    
+/* home page --> navbar */
+header{
+    background-color: var(--color-primary);
+}
+header nav{
+    padding: 20px;
+    width: 80%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-link);
+}
+    
+header nav ul{
+    display: flex;
+    list-style: none;
+    
+}
+header nav li a {
+    color: var(--color-link);
+    margin: 0 8px;
+}
+/* burger icon */
+.burgericon{
+    border: 1px solid var(--color-link);
+    padding: 7px 5px 0;
+    width: 45px;
+    border-radius: 5px;
+    display: none;
+}
+.burgericon .line{
+    border-top: 3px solid var(--color-link);
+    display: block;
+    margin-bottom: 5px;
+}
+
+.shine{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: 10rem auto;
+}
+
+.first-side img{
+    border-radius: 100%;
+    width: 5rem;
+    height: 5rem;
+}
+.first-side{
+    /* padding: 0 70px; */
+    margin: 50px 0;
+    display: flex;
+}
+.first-side .shane{
+    margin-left: 10px;
+}
+.first-side h3{
+    font-size:2rem;
+}
+.first-side p{
+    font-size: 1.6rem;
+    color: var(--color-link);
+}
+.second-side{
+    width: 80%;
+    padding: 0px 30px;
+    margin: 0 auto;
+}
+.second-side .h2{
+    font-size: 4rem;
+}
+.second-side .p{
+    font-size: 1.6rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.second-side a{
+    color: #fff;
+    background-color: var(--color-link);
+    padding: 3px 7px;
+    border-radius: 5px;
+    font-size: 1.4rem;
+}
+
+.second-side img{
+    border-radius: 10px;
+    width: 80rem;
+    height: 40rem;
+    margin: 2rem 0;
+    object-fit: cover;
+}
+
+.second-side p{
+    font-size: 2rem;
+    color: var(--color-primary);
+    padding: 2rem 0 3rem 0;
+}
+
+.second-side h2{
+    font-size: 3rem;
+}
+.contaaineer .diiv, .smart{
+    font-size: 1.6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contaaineer .diiv{
+    padding: 2rem 0;
+}
+.contaaineer .smart{
+    padding: 2rem 50px 0;
+}
+
+.contaaineer .smart h4{
+    padding: 0 20px;
+}
+
+.contaaineer .diiv h4, p{
+    padding: 0 20px;
+}
+
+.contaaineer{
+    box-shadow: 0 4px 8px 0 var(--color-primary);
+    border: 1px solid var(--color-link);
+    width: 60%;
+    margin: 6rem 25%;
+    background-color: var(--some-backgrounds);
+    padding: 30px;
+}
+.contaaineer img{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.contaaineer textarea{
+    width: 100%;
+    border-radius: 7px;
+    padding: 10px 10px 0;
+    margin: 0 auto;
+}   
+
+.name-1{
+    background-color: var(--color-primary);
+    /* height: 10vh; */
+    /* margin: 10px 0; */
+}
+
+.text{ 
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.4rem;
+    color: #fff;
+}
+.text .bell p{
+    font-size: 1.4rem;
+}
+.cook a{
+    color: #fff;
+}
+
+/* tablet view */
+@media screen and (min-width:501px) and (max-width:768px) {
+    header nav a{
+        display: none;
+    }
+    header nav{
+        display: flex;
+    }
+    .burgericon{
+        display: block;
+        justify-content:space-around;
+    }
+
+    .shine{
+        flex-direction: column;
+    }
+
+    .second-side img{
+        border-radius: 10px;
+        width: 45rem;
+        height: 20rem;
+        margin: 2rem 0;
+        object-fit: cover;
+    }
+
+    .second-side{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .first-side .shane{
+        margin: 0;
+        text-align: center;
+    }
+    .first-side{
+        margin:0 50px;
+        text-align: center;
+    }
+    .second-side .h2{
+        font-size: 3rem;
+    }
+    .second-side .h2, a, .p{
+        padding: 0;
+    }
+
+    .contaaineer .diiv h4, p{
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .contaaineer .smart h4, p{
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .contaaineer .smart{
+        padding: 2rem 0 0 40px;
+        width: 100%;
+    }
+}
+
+/* mobile view */
+@media screen and (max-width:500px) {
+
+    header nav a{
+        display:none;
+    }
+    header nav{
+        display: flex;
+    }
+    .burgericon{
+        display: block;
+        justify-content:space-around;
+    }
+
+    .shine{
+        flex-direction: column;
+    }
+
+    .second-side .h2{
+        font-size: 2rem;
+    }
+
+    .second-side img{
+        border-radius: 10px;
+        width: 35rem;
+        height: 20rem;
+        margin: 2rem 0;
+        object-fit: cover;
+    }
+
+    .second-side{
+        padding: 0;
+        margin: 0 auto;
+    }
+
+    .first-side .shane{
+        margin: 0 13rem 0 0;
+        text-align: center;
+    }
+
+    .first-side{
+        margin:0 auto;
+        text-align: start;
+    }
+    
+    .second-side h2{
+        font-size: 3rem;
+        width: 100%;
+        margin: 0;
+
+    }
+    .second-side p{
+        padding: 1rem 0;
+    }
+
+    .second-side .h2, a, .p{
+        padding: 0;
+    }
+
+    .contaaineer{
+        width: 400px;
+        margin: 0 auto 3rem auto;
+    }
+
+    .contaaineer .diiv h4, p{
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .contaaineer .smart h4, p{
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .contaaineer .smart{
+        padding: 2rem 0 0 40px;
+        width: 100%;
+    }
+
+    .text{
+        flex-direction: column;
+        text-align: center;
+    }
+}
